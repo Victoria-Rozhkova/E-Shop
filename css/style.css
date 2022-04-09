@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro Display',
+        sans-serif;
+}
+
+header {
+    background-color: #2f2a2d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fafafa;
+    padding: 30px 80px;
+}
+
+
+
+.header {
+    background-color: #2f2a2d;
+}
+
+.logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fafafa;
+}
+
+.header_right {
+    position: relative;
+    display: flex;
+    gap: 50px;
+}
+
+.search-form {
+    display: flex;
+    border-bottom: 2px solid #fafafa;
+}
+
+.search-button {
+    background: transparent;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.search-button:hover {
+    cursor: pointer;
+}
+
+.goods-search {
+    box-sizing: border-box;
+    width: 200px;
+    color: #fafafa;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.goods-search:focus {
+    outline: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-item:hover {
+    transform: scale(1.1);
+    transition: all 0.8s;
+}
+
+.product-description {
+    border: 1px solid #c0c0c040;
+    padding: 15px;
+}
+
+.btn-cart {
+    background-color: #fafafa;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    color: #2f2a2d;
+    border-radius: 5px;
+    transition: all ease-in-out .5s;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    background-color: transparent;
+    border-color: #fafafa;
+    color: #fafafa;
+}
+
+.buy-btn,
+.delFromBasket {
+    margin-top: 5px;
+    background-color: #2f2a2d;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    color: #fafafa;
+    border-radius: 5px;
+    transition: all ease-in-out .4s;
+    cursor: pointer;
+}
+
+.buy-btn:hover,
+.delFromBasket:hover {
+    background: #fff;
+    border-color: #2f2a2d;
+    color: #2f2a2d;
+}
+
+.basket {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
+    border-radius: 5px;
+    box-sizing: border-box;
+    right: 0;
+    top: 130%;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    min-width: 300px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.basket:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    right: 40px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+.basket-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+}
+
+.cart-left {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.cart-right {
+    text-align: center;
+}
