@@ -35,30 +35,27 @@ Vue.component("cart", {
       }
     },
     remove(item) {
-      console.log(item);
-      // this.$parent
-      //   .putJson(`api/cart/${item.id_product}/${item.product_name}`)
-      //   .then((data) => {
-      //     console.log(data);
-      //     if (data.result === 1) {
-      //       if (item.quantity > 1) {
-      //         item.quantity--;
-      //       } else {
-      //         this.$parent
-      //           .delJson(
-      //             `api/cart/${item.id_product}/${item.product_name}`,
-      //             item
-      //           )
-      //           .then((data) => {
-      //             if (data.result) {
-      //               this.cartItems.splice(this.cartItems.indexOf(item), 1);
-      //             } else {
-      //               console.log("error");
-      //             }
-      //           });
-      //       }
-      //     }
-      //   });
+      if (item.quantity > 1) {
+        this.$parent
+          .putJson(`/api/cart/${item.id_product}/${item.product_name}`, {
+            quantity: -1,
+          })
+          .then((data) => {
+            if (data.result) {
+              item.quantity--;
+            }
+          });
+      } else {
+        this.$parent
+          .detJson(`/api/cart/${item.id_product}/${item.product_name}`, item)
+          .then((data) => {
+            if (data.result) {
+              this.cartItems.splice(this.cartItems.indexOf(item, 1));
+            } else {
+              console.log("error");
+            }
+          });
+      }
     },
   },
   mounted() {
