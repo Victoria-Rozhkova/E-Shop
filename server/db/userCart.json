@@ -1,0 +1,32 @@
+{
+    "amount": 7500,
+    "countGoods": 1,
+    "contents": [
+        {
+            "quantity": 5,
+            "id_product": 11,
+            "product_name": "Milk bowl",
+            "price": 7500
+        },
+        {
+            "quantity": 20,
+            "id_product": 12,
+            "product_name": "cappuccino set",
+            "price": 12800
+        },
+        {
+            "quantity": 3,
+            "id_product": 14,
+            "product_name": "lamp drop",
+            "img_product": "img/14.jpg",
+            "price": 10100
+        },
+        {
+            "quantity": 2,
+            "id_product": 13,
+            "product_name": "contour vase",
+            "img_product": "img/13.jpg",
+            "price": 5380
+        }
+    ]
+}

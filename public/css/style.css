@@ -84,6 +84,11 @@ header {
     flex-wrap: wrap;
 }
 
+.products img {
+    width: 200px;
+    height: 150px;
+}
+
 .product-item {
     display: flex;
     flex-direction: column;
@@ -153,6 +158,11 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.basket img {
+    width: 50px;
+    height: 50px;
 }
 
 .basket:before {
